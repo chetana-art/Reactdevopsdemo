@@ -1,0 +1,477 @@
+css
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f5f7fa;
+  color: #17202a;
+}
+
+.app {
+  min-height: 100vh;
+}
+
+
+/* ================= NAVBAR ================= */
+
+.navbar {
+  height: 70px;
+  padding: 0 8%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  background: #ffffff;
+
+  position: sticky;
+  top: 0;
+  z-index: 100;
+
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.logo {
+  font-size: 25px;
+  font-weight: bold;
+  color: #1677ff;
+}
+
+.nav-links {
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+.nav-links a:hover {
+  color: #1677ff;
+}
+
+.favorites {
+  font-weight: bold;
+  color: #1677ff;
+}
+
+
+/* ================= HERO ================= */
+
+.hero {
+  min-height: 560px;
+
+  padding: 80px 8%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  background:
+    linear-gradient(135deg, #eaf3ff, #ffffff);
+}
+
+.hero-content {
+  max-width: 650px;
+}
+
+.small-text {
+  color: #1677ff;
+
+  font-size: 13px;
+
+  font-weight: bold;
+
+  letter-spacing: 2px;
+
+  margin-bottom: 15px;
+}
+
+.hero h1 {
+  font-size: 64px;
+
+  line-height: 1.1;
+
+  margin-bottom: 25px;
+}
+
+.hero h1 span {
+  color: #1677ff;
+}
+
+.hero p {
+  color: #666;
+
+  font-size: 18px;
+
+  line-height: 1.7;
+
+  margin-bottom: 30px;
+}
+
+.explore-button {
+  display: inline-block;
+
+  padding: 15px 25px;
+
+  background: #1677ff;
+
+  color: white;
+
+  text-decoration: none;
+
+  border-radius: 8px;
+
+  font-weight: bold;
+
+  transition: 0.3s;
+}
+
+.explore-button:hover {
+  background: #095dcc;
+
+  transform: translateY(-3px);
+}
+
+.hero-image {
+  width: 350px;
+  height: 350px;
+
+  border-radius: 50%;
+
+  background: white;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 150px;
+
+  box-shadow: 0 20px 50px #0002;
+}
+
+
+/* ================= SPORTS ================= */
+
+.sports-section {
+  padding: 80px 8%;
+}
+
+.section-header {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  margin-bottom: 40px;
+}
+
+.section-header h2,
+.section-title h2 {
+  font-size: 40px;
+}
+
+.section-header input {
+  width: 280px;
+
+  padding: 14px;
+
+  border: 1px solid #ddd;
+
+  border-radius: 8px;
+
+  outline: none;
+
+  font-size: 15px;
+}
+
+.section-header input:focus {
+  border-color: #1677ff;
+}
+
+
+/* ================= SPORTS GRID ================= */
+
+.sports-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, 1fr);
+
+  gap: 25px;
+}
+
+
+/* ================= SPORT CARD ================= */
+
+.sport-card {
+  position: relative;
+
+  background: white;
+
+  padding: 25px;
+
+  border-radius: 15px;
+
+  border: 1px solid #eee;
+
+  transition: 0.3s;
+}
+
+.sport-card:hover {
+  transform: translateY(-8px);
+
+  box-shadow:
+    0 15px 35px #0002;
+}
+
+.favorite-button {
+  position: absolute;
+
+  top: 15px;
+  right: 15px;
+
+  border: none;
+
+  background: #f5f7fa;
+
+  width: 40px;
+  height: 40px;
+
+  border-radius: 50%;
+
+  cursor: pointer;
+
+  font-size: 18px;
+}
+
+.sport-icon {
+  height: 160px;
+
+  background: #eef5ff;
+
+  border-radius: 12px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  font-size: 85px;
+
+  margin-bottom: 20px;
+}
+
+.category {
+  color: #1677ff;
+
+  font-size: 13px;
+
+  font-weight: bold;
+
+  text-transform: uppercase;
+}
+
+.sport-card h3 {
+  font-size: 24px;
+
+  margin: 10px 0;
+}
+
+.description {
+  color: #777;
+
+  line-height: 1.6;
+
+  margin-bottom: 20px;
+}
+
+.learn-button {
+  border: none;
+
+  background: #1677ff;
+
+  color: white;
+
+  padding: 11px 18px;
+
+  border-radius: 7px;
+
+  cursor: pointer;
+
+  font-weight: bold;
+}
+
+.learn-button:hover {
+  background: #095dcc;
+}
+
+
+/* ================= MATCHES ================= */
+
+.matches-section {
+  padding: 80px 8%;
+
+  background: white;
+}
+
+.section-title {
+  text-align: center;
+
+  margin-bottom: 40px;
+}
+
+.matches-container {
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, 1fr);
+
+  gap: 25px;
+}
+
+.match-card {
+  padding: 30px;
+
+  background: #f7f9fc;
+
+  border-radius: 15px;
+
+  text-align: center;
+
+  border: 1px solid #e5e5e5;
+
+  transition: 0.3s;
+}
+
+.match-card:hover {
+  transform: translateY(-5px);
+
+  box-shadow: 0 12px 25px #0002;
+}
+
+.match-sport {
+  font-size: 50px;
+
+  margin-bottom: 20px;
+}
+
+.teams {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 15px;
+
+  margin-bottom: 20px;
+}
+
+.teams h3 {
+  font-size: 18px;
+}
+
+.teams span {
+  color: #1677ff;
+
+  font-weight: bold;
+}
+
+.match-time {
+  color: #666;
+
+  margin-bottom: 20px;
+}
+
+.match-button {
+  border: none;
+
+  background: #1677ff;
+
+  color: white;
+
+  padding: 11px 20px;
+
+  border-radius: 7px;
+
+  cursor: pointer;
+
+  font-weight: bold;
+}
+
+.match-button:hover {
+  background: #095dcc;
+}
+
+
+/* ================= STATS ================= */
+
+.stats-section {
+  padding: 60px 8%;
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(4, 1fr);
+
+  gap: 20px;
+
+  background: #1677ff;
+
+  color: rgb(64, 31, 31);
+
+  text-align: center;
+}
+
+.stat h2 {
+  font-size: 40px;
+
+  margin-bottom: 8px;
+}
+
+.stat p {
+  opacity: 0.9;
+}
+
+
+/* ================= ABOUT ================= */
+
+.about-section {
+  padding: 90px 8%;
+
+  text-align: center;
+
+  background: #355d9a;
+}
+
+.about-section h2 {
+  font-size: 40px;
+
+  margin-bottom: 20px;
+}
+
+.about-section > p:last-child {
+  max-width: 700px;
+
+  margin: auto;
+
+  color: #666;
+
+  line-height: 1.8;
+
+  font-size: 17px;
+}
+
